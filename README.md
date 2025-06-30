@@ -1,6 +1,6 @@
 # Spaceman-Game
 
-![spaceman](/pictures/image%20copy.png)
+![spaceman](/pictures/imagespa.png)
 - Done by: Khaled Jamal
 
 ## Game Description
