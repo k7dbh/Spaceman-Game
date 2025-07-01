@@ -1,6 +1,8 @@
 # Spaceman-Game
 
-![spaceman](/pictures/imagespa.png)
+<!-- ![spaceman](/pictures/imagespa.png){width=300px} -->
+<img src="./pictures/imagespa.png" width="500" height="400">
+
 - Done by: Khaled Jamal
 
 ## Game Description
@@ -9,4 +11,4 @@ Spaceman is game the player guess the word by typing letters from the keyboard w
 
 ## Wire Frame
 
-![wireframe](/pictures/image.png)
+<img src="./pictures/image.png" width="500" height="600">
