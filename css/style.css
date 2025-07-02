@@ -1,0 +1,56 @@
+body{
+    font-family: monospace;
+    background-color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: 2% auto;
+    margin: 2%;
+    padding: 1em;
+    background-color: rgb(244,240,230);
+    box-shadow: 2px 3px 7px #0019;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 35em;
+    
+}
+.spaceman-art{
+white-space:inherit ;
+}
+.keyboard{
+   margin: 3em 0;
+   padding: 3em;
+}
+.key{
+    margin: 4px auto;
+    padding:  10px 14px;
+    box-shadow: 3px 3px 3px #0019;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight:bold;
+    display: inline-block;
+    background-color:darksalmon;
+
+}
+.message{
+    font-weight: bold;
+    min-height: 1.5em;
+    margin: 1em 0;
+}
+.reset{
+    background-color: darksalmon;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight:bold;
+    display: inline-block;
+    background-color:darksalmon;
+    padding: 10px 40px;
+}
