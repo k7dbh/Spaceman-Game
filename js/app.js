@@ -1,14 +1,15 @@
 /*-------------- Constants -------------*/
-const word = ['cat','lion','dog','zebra','bird','hamster','goat','pig','horse','wolf','banana','mouse','banana','orange','table','board','chair','paper','card','pen','door','wire','computer']
+const words = ['cat','lion','dog','zebra','bird','hamster','goat','pig','horse','wolf','banana','mouse','banana','orange','table','board','chair','paper','card','pen','door','wire','computer']
 const misTimes = 6;//6 times maximum number of mistakes
 
 
 
 /*---------- Variables (state) ---------*/
 
-let loseGame = false;
-let guessWrong = 0;
-let guessLetter = [];
+let loseGame = false;//game over
+let guessWrong = 0;//gessing wrong
+let guessLetter = [];//guess letter
+let wordRdm = '';//secret word
 
 
 /*----- Cached Element References  -----*/
@@ -21,9 +22,24 @@ console.log(wordEl)
 
 
 /*-------------- Functions -------------*/
+function starting(){
+    wordRdm = words[Math.floor(Math.random() * words.length)];
+}
+
+
+function gussWord(){
+    if(loseGame || guessLetter.includes(letter)) return;
+    guessLetter.push(letter);
+    if(!wordRdm.includes(letter)) guessWrong++;
+}
+
+
+
 
 
 
 
 
 /*----------- Event Listeners ----------*/
+
+resetBtn.addEventListener('click', starting);
