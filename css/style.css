@@ -20,15 +20,24 @@ body{
     max-width: 35em;
     
 }
+.word{
+    font-weight: bold;
+    font-size: 40px;
+}
 .spaceman-art{
 white-space:inherit ;
+object-fit: contain ;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 50px;
 }
 .keyboard{
    margin: 3em 0;
-   padding: 3em;
+   padding: 2.5em;
 }
 .key{
-    margin: 4px auto;
+    margin: 3px auto;
     padding:  10px 14px;
     box-shadow: 3px 3px 3px #0019;
     border-radius: 10px;
