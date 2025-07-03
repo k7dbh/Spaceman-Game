@@ -1,66 +1,139 @@
-body{
+body {
     font-family: monospace;
     background-color: antiquewhite;
     font-size: 20px;
     text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.container{
-    margin: 2% auto;
-    margin: 2%;
+
+.container {
+    margin: 5px auto;
     padding: 1em;
-    background-color: rgb(244,240,230);
+    background-color: beige;
     box-shadow: 2px 3px 7px #0019;
     border-radius: 15px;
     text-align: center;
     max-width: 35em;
-    
+    display: flex;
+    flex-direction: column;
 }
-.word{
+
+.word {
     font-weight: bold;
     font-size: 40px;
 }
-.spaceman-art{
-white-space:inherit ;
-object-fit: contain ;
-display: block;
-margin-left: auto;
-margin-right: auto;
-padding: 50px;
-font-size: 25px;
+
+.spaceman-art {
+    white-space: inherit;
+    object-fit: contain;
+    padding: 50px;
+    font-size: 1em;
+    background-color: bisque;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.keyboard{
-   margin: 3em 0;
-   padding: 2.5em;
+
+.keyboard {
+    margin: 3em 0;
+    padding: 2.5em;
 }
-.key{
+
+.key {
     margin: 3px auto;
-    padding:  10px 14px;
+    padding: 10px 14px;
     box-shadow: 3px 3px 3px #0019;
     border-radius: 10px;
     cursor: pointer;
     font-size: 13px;
-    font-weight:bold;
+    font-weight: bold;
     display: inline-block;
-    background-color:darksalmon;
+    background-color: darksalmon;
+    box-shadow: 1px 2px 5px;
+    transition: 0.2s, 0.2s
+}
+
+.key:hover {
+    background-color: rgb(233, 150, 130, 0.5);
 
 }
-.message{
+
+.message {
     font-weight: bold;
     min-height: 1.5em;
     margin: 1em 0;
 }
-.reset{
+
+.reset {
+    background-color: rgb(233, 150, 130);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: rgb(233, 150, 130);
+    padding: 10px 0px;
+    box-shadow: 1px 2px 5px;
+    transition: 0.2s, 0.2s
+}
+
+.reset:hover {
+    background-color: rgb(233, 150, 130, 0.5);
+}
+
+.instructions {
+    background-color: darksalmon;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: darksalmon;
+    padding: 10px 0px;
+    margin-top: 6px;
+    box-shadow: 1px 2px 5px;
+    transition: 0.2s, 0.2s
+}
+
+.instructions:hover {
+    background-color: rgb(233, 150, 130, 0.5);
+}
+
+.close {
     background-color: darksalmon;
     border-radius: 10px;
     cursor: pointer;
     font-size: 13px;
-    font-weight:bold;
+    font-weight: bold;
     display: inline-block;
-    background-color:darksalmon;
-    padding: 10px 40px;
+    background-color: darksalmon;
+    padding: 0.8em 0.4em;
+    margin-top: 6px;
+    box-shadow: 1px 2px 5px;
+    transition: 0.2s, 0.2s
+}
+
+.close:hover {
+    background-color: rgb(233, 150, 130, 0.5);
+
+}
+
+.understood {
+    background-color: darksalmon;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: darksalmon;
+    padding: 0.8em 0.4em;
+    margin-top: 6px;
+    box-shadow: 1px 2px 5px;
+    transition: 0.2s, 0.2s
+}
+
+.understood:hover {
+    background-color: rgb(233, 150, 130, 0.5);
+
 }

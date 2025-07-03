@@ -1,7 +1,7 @@
 /*-------------- Constants -------------*/
 const words = ['cat', 'lion', 'dog', 'zebra', 'bird', 'hamster', 'goat', 'pig', 'horse', 'wolf', 'banana', 'mouse', 'banana', 'orange', 'table', 'board', 'chair', 'paper', 'card', 'pen', 'door', 'wire', 'computer', 'pencil', 'table', 'teacher', 'window', 'flower', 'water', 'panda', 'candy', 'bag', 'glass', 'hat', 'pizza', 'burger', 'juice', 'tower',];
-const misTimes = 6; // maximum number of wrong guesses
-const spacePics = ['🏃‍➡️__________________', '_____🏃‍➡️_____________', '________🏃‍➡️__________', '____________🏃‍➡️______', '______________🏃‍➡️____', '________________🏃‍➡️__', '______________🪦😵'];
+const misTimes = 5; // maximum number of wrong guesses
+const spacePics = ['🏃‍➡️__________________', '_____🏃‍➡️_____________', '________🏃‍➡️__________', '____________🏃‍➡️______', '_______________🏃‍➡️___','______________🪦😵'];
 
 /*---------- Variables ---------*/
 let wordRdm = '';
