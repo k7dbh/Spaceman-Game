@@ -3,6 +3,8 @@ body {
     background-color: antiquewhite;
     font-size: 20px;
     text-align: center;
+    /* max-width: 750px; */
+    margin: 0 auto;
 }
 
 .container {
@@ -12,9 +14,11 @@ body {
     box-shadow: 2px 3px 7px #0019;
     border-radius: 15px;
     text-align: center;
-    max-width: 35em;
+    max-width: 750px !important;
     display: flex;
     flex-direction: column;
+    width: fit-content;
+
 }
 
 .word {
@@ -25,14 +29,14 @@ body {
 .spaceman-art {
     white-space: inherit;
     object-fit: contain;
-    padding: 50px;
+    padding: 50px ;
     font-size: 1em;
     background-color: bisque;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .keyboard {
@@ -136,4 +140,9 @@ body {
 .understood:hover {
     background-color: rgb(233, 150, 130, 0.5);
 
+}
+@media (min-width:400px){ 
+    .spaceman-art{
+        font-size: 1.8em;
+    }
 }

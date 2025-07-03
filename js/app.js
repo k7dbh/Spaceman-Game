@@ -62,7 +62,11 @@ function winLose() {
 function renderSpaceMan() {
     spaceManEl.textContent = spacePics[guessWrong];
 }
-
+function renderUI() {
+    renderSpaceMan();
+    renderWord();
+    renderMsg();
+}
 
 function renderWord() {
     wordEl.innerHTML = '';
@@ -78,11 +82,7 @@ function renderMsg() {
 }
 
 
-function renderUI() {
-    renderSpaceMan();
-    renderWord();
-    renderMsg();
-}
+
 
 /*----------- Event Listeners ----------*/
 keyBtnEl.forEach(btn => {
