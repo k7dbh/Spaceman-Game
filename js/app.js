@@ -1,7 +1,7 @@
 /*-------------- Constants -------------*/
 const words = ['cat', 'lion', 'dog', 'zebra', 'bird', 'hamster', 'goat', 'pig', 'horse', 'wolf', 'banana', 'mouse', 'banana', 'orange', 'table', 'board', 'chair', 'paper', 'card', 'pen', 'door', 'wire', 'computer', 'pencil', 'table', 'teacher', 'window', 'flower', 'water', 'panda', 'candy', 'bag', 'glass', 'hat', 'pizza', 'burger', 'juice', 'tower',];
 const misTimes = 5; // maximum number of wrong guesses
-const spacePics = ['🏃‍➡️__________________', '_____🏃‍➡️_____________', '________🏃‍➡️__________', '____________🏃‍➡️______', '_______________🏃‍➡️___','______________🪦😵'];
+const spacePics = ['🏃‍➡️__________________', '_____🏃‍➡️_____________', '________🏃‍➡️__________', '____________🏃‍➡️______', '_______________🏃‍➡️___', '______________🪦😵'];
 
 /*---------- Variables ---------*/
 let wordRdm = '';
@@ -19,7 +19,7 @@ const resetBtn = document.querySelector('.reset');
 /*-------------- Functions -------------*/
 
 // starting the game
-function startingGame() {
+startingGame = () => {
     wordRdm = words[Math.floor(Math.random() * words.length)];
     guessLetter = [];
     guessWrong = 0;
@@ -31,7 +31,7 @@ function startingGame() {
 }
 
 // handle guessing a letter
-function guessWord(letter, btn) {
+guessWord = (letter, btn) => {
     if (loseGame || guessLetter.includes(letter)) return;
     guessLetter.push(letter);
     // disable the button after guess
@@ -46,10 +46,11 @@ function guessWord(letter, btn) {
 }
 
 // check for win or lose
-function winLose() {
+winLose = () => {
     if (wordRdm.split('').every(a => guessLetter.includes(a.toUpperCase()))) {
         loseGame = true;
         msgEl.textContent = 'You Win!!!';
+
         keyBtnEl.forEach(btn => btn.disabled = true);
     } else if (guessWrong >= misTimes) {
         loseGame = true;
@@ -59,28 +60,29 @@ function winLose() {
     }
 }
 // Render UI functions
-function renderUI() {
+renderUI = () => {
+
+
+    renderSpaceMan = () => {
+        spaceManEl.textContent = spacePics[guessWrong];
+    }
+
+    renderWord = () => {
+        wordEl.innerHTML = '';
+        for (let a of wordRdm) {
+            wordEl.innerHTML += guessLetter.includes(a.toUpperCase()) ? a.toUpperCase() + ' ' : '_ ';
+        }
+    }
+
+    renderMsg = () => {
+        if (!loseGame) {
+            msgEl.textContent = `Wrong guesses: ${guessWrong} / ${misTimes}`;
+        }
+    }
     renderSpaceMan();
     renderWord();
     renderMsg();
 }
-function renderSpaceMan() {
-    spaceManEl.textContent = spacePics[guessWrong];
-}
-
-function renderWord() {
-    wordEl.innerHTML = '';
-    for (let a of wordRdm) {
-        wordEl.innerHTML += guessLetter.includes(a.toUpperCase()) ? a.toUpperCase() + ' ' : '_ ';
-    }
-}
-
-function renderMsg() {
-    if (!loseGame) {
-        msgEl.textContent = `Wrong guesses: ${guessWrong} / ${misTimes}`;
-    }
-}
-
 /*----------- Event Listeners ----------*/
 keyBtnEl.forEach(btn => {
     btn.addEventListener('click', function () {

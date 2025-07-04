@@ -1,5 +1,5 @@
 h2{
-    padding: 2em;
+    padding: 0.4em;
 }
 body {
     font-family: monospace;
@@ -8,7 +8,7 @@ body {
     text-align: center;
     /* max-width: 750px; */
     margin: 0 auto ; 
-    padding: 4em;
+    padding: 2em !important;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
     box-shadow: 2px 3px 7px #0019;
     border-radius: 15px;
     text-align: center;
-    max-width: 750px !important;
+    max-width: 1000px !important;
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -29,13 +29,13 @@ body {
 .word {
     font-weight: bold;
     font-size: 70px;
-    padding: 1.5em;
+    padding: 0.1em;
 }
 
 .spaceman-art {
     white-space: inherit;
     object-fit: contain;
-    padding: 50px ;
+    padding: 40px ;
     font-size: 2.5em;
     background-color: bisque;
     border-radius: 15px;
@@ -47,7 +47,7 @@ body {
 
 .keyboard {
     margin: 3em 0;
-    padding: 2.5em;
+    padding: 2em;
 }
 
 .key {
