@@ -59,13 +59,13 @@ function winLose() {
     }
 }
 // Render UI functions
-function renderSpaceMan() {
-    spaceManEl.textContent = spacePics[guessWrong];
-}
 function renderUI() {
     renderSpaceMan();
     renderWord();
     renderMsg();
+}
+function renderSpaceMan() {
+    spaceManEl.textContent = spacePics[guessWrong];
 }
 
 function renderWord() {
@@ -80,9 +80,6 @@ function renderMsg() {
         msgEl.textContent = `Wrong guesses: ${guessWrong} / ${misTimes}`;
     }
 }
-
-
-
 
 /*----------- Event Listeners ----------*/
 keyBtnEl.forEach(btn => {

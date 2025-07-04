@@ -1,10 +1,14 @@
+h2{
+    padding: 2em;
+}
 body {
     font-family: monospace;
-    background-color: antiquewhite;
+    background-color: antiquewhite !important;
     font-size: 20px;
     text-align: center;
     /* max-width: 750px; */
-    margin: 0 auto;
+    margin: 0 auto ; 
+    padding: 4em;
 }
 
 .container {
@@ -18,19 +22,21 @@ body {
     display: flex;
     flex-direction: column;
     width: fit-content;
+    
 
 }
 
 .word {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 70px;
+    padding: 1.5em;
 }
 
 .spaceman-art {
     white-space: inherit;
     object-fit: contain;
     padding: 50px ;
-    font-size: 1em;
+    font-size: 2.5em;
     background-color: bisque;
     border-radius: 15px;
     display: flex;
@@ -141,8 +147,14 @@ body {
     background-color: rgb(233, 150, 130, 0.5);
 
 }
-@media (min-width:400px){ 
+@media (max-width:600px){ 
     .spaceman-art{
-        font-size: 1.8em;
+        font-size: 1em;
+
     }
+    .word {
+    font-weight: bold;
+    font-size: 33px;
+    padding: 1em;
+}
 }
