@@ -1,13 +1,12 @@
 # 🎮 Spaceman-Game
 
-<!-- ![spaceman](/pictures/imagespa.png){width=300px} -->
 <img src="./pictures/spaceman.png" width="400" height="350">
 
 - Done by: Khaled Jamal
 
 ## 📃 Game Description:
 
-Spaceman is a game player guess the word by typing letters from the keyboard within restricted number of tries. To win you need to get the right letters to know the random word otherwise you will lose. 
+Spaceman is a game player guess the word by typing letters from the keyboard within restricted number of tries. To win, you need to get the right letters to know the random word otherwise you will lose. 
 
 ## 🔎 Background info:
 I am creating this project as part of my studies at General Assembly's software engineering bootcamp.
