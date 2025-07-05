@@ -19,7 +19,7 @@ const resetBtn = document.querySelector('.reset');
 /*-------------- Functions -------------*/
 
 // starting the game
-startingGame = () => {
+startGame = () => {
     wordRdm = words[Math.floor(Math.random() * words.length)];
     guessLetter = [];
     guessWrong = 0;
@@ -34,6 +34,7 @@ startingGame = () => {
 guessWord = (letter, btn) => {
     if (loseGame || guessLetter.includes(letter)) return;
     guessLetter.push(letter);
+    
     // disable the button after guess
     btn.disabled = true;
 
@@ -45,7 +46,7 @@ guessWord = (letter, btn) => {
     renderUI();
 }
 
-// check for win or lose
+// check for win or lose conditions
 winLose = () => {
     if (wordRdm.split('').every(a => guessLetter.includes(a.toUpperCase()))) {
         loseGame = true;
@@ -62,18 +63,18 @@ winLose = () => {
 // Render UI functions
 renderUI = () => {
 
-
+    //render for spaceman movement
     renderSpaceMan = () => {
         spaceManEl.textContent = spacePics[guessWrong];
     }
-
+    //render for guessing letters in the blanks
     renderWord = () => {
         wordEl.innerHTML = '';
         for (let a of wordRdm) {
             wordEl.innerHTML += guessLetter.includes(a.toUpperCase()) ? a.toUpperCase() + ' ' : '_ ';
         }
     }
-
+    //render for appearing message and missing times
     renderMsg = () => {
         if (!loseGame) {
             msgEl.textContent = `Wrong guesses: ${guessWrong} / ${misTimes}`;
@@ -84,12 +85,27 @@ renderUI = () => {
     renderMsg();
 }
 /*----------- Event Listeners ----------*/
+
+// To click buttons
 keyBtnEl.forEach(btn => {
     btn.addEventListener('click', function () {
         guessWord(btn.textContent, btn);
     });
 });
 
-resetBtn.addEventListener('click', startingGame);
+// This is the reset button
+resetBtn.addEventListener('click', startGame);
+
+// This is physical keyboard
+window.addEventListener('keydown', e => {
+    if (loseGame) return;
+    const key = e.key.toUpperCase();
+    const btn = Array.from(keyBtnEl).find(b => b.textContent === key);
+    if (btn && !btn.disabled) {
+        guessWord(key, btn);
+    }
+});
+
+
 // Initialize game
-startingGame();
+startGame();
