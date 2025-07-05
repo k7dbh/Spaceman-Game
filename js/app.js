@@ -97,10 +97,10 @@ keyBtnEl.forEach(btn => {
 resetBtn.addEventListener('click', startGame);
 
 // This is physical keyboard
-window.addEventListener('keydown', e => {
+window.addEventListener('keydown', press => {
     if (loseGame) return;
-    const key = e.key.toUpperCase();
-    const btn = Array.from(keyBtnEl).find(b => b.textContent === key);
+    const key = press.key.toUpperCase();
+    const btn = Array.from(keyBtnEl).find(bbtn => bbtn.textContent === key);
     if (btn && !btn.disabled) {
         guessWord(key, btn);
     }

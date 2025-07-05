@@ -16,11 +16,9 @@ The reason I chose to create a Spaceman game as my project is because I found th
 
 ## 🧮 Getting started
 
-👉**Play it here** 
-- [link of the game](https://k7dbh.github.io/Spaceman-Game/)
+👉**Play it here:**  [link of the game](https://k7dbh.github.io/Spaceman-Game/)
 
-👉**Planning Materials:**
-- [link of trello](https://trello.com/b/aBFr4aME/spaceman-game) 
+👉**Planning Materials:** [link of trello](https://trello.com/b/aBFr4aME/spaceman-game) 
 
 ### How to play
 1. Guess the word:
@@ -41,6 +39,11 @@ You have five chances to guess the word by using the keyboard.
 
 ## 📚 Attributions
 
-- []()
+- [Models from Bootstrap](https://getbootstrap.com/)
 
 ## Next Steps
+
+- Adding better technologies to the game.
+- Doing some animations to the game.
+- Providing some hints in the game to make it easier.
+- Improve the game page adding start page, modes page etc.
