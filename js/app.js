@@ -1,5 +1,5 @@
 /*-------------- Constants -------------*/
-const words = ['cat', 'lion', 'dog', 'zebra', 'bird', 'hamster', 'goat', 'pig', 'horse', 'wolf', 'banana', 'mouse', 'banana', 'orange', 'table', 'board', 'chair', 'paper', 'card', 'pen', 'door', 'wire', 'computer', 'pencil', 'table', 'teacher', 'window', 'flower', 'water', 'panda', 'candy', 'bag', 'glass', 'hat', 'pizza', 'burger', 'juice', 'tower',];
+const words = ['cat', 'lion', 'dog', 'zebra', 'bird', 'hamster', 'goat', 'pig', 'horse', 'wolf', 'banana', 'mouse', 'banana', 'orange', 'table', 'board', 'chair', 'paper', 'card', 'pen', 'door', 'wire', 'computer', 'pencil', 'table', 'teacher', 'window', 'flower', 'water', 'panda', 'candy', 'bag', 'glass', 'hat', 'pizza', 'burger', 'juice', 'tower'];
 const misTimes = 5; // maximum number of wrong guesses
 const spacePics = ['🏃‍➡️_________________🪦', '_____🏃‍➡️____________🪦', '________🏃‍➡️_________🪦', '____________🏃‍➡️_____🪦', '_______________🏃‍➡️__🪦', '____________________🪦😵'];
 
